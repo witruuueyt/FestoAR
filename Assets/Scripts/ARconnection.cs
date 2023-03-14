@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class DTconnection : MonoBehaviour
+public class ARconnection : MonoBehaviour
 {
     public TMP_Text factory;
     public TMP_Text robotArm;
@@ -17,13 +17,13 @@ public class DTconnection : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     public void CFactory()
