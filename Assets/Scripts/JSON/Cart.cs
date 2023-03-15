@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
 using UnityEngine.UI;
@@ -18,6 +18,11 @@ public class Cart : MonoBehaviour
 
     public string requestURL;
 
+    public NodeCheck nodeCheck;
+    public TMP_Text onoText;
+    private string currentCarrierID;
+
+
     public void ReceieveData(string CurrentCartStringPHPMany)
     {
         string newCurrentCartStringPHPMany = fixJson(CurrentCartStringPHPMany);
@@ -33,8 +38,6 @@ public class Cart : MonoBehaviour
         {
             Debug.LogWarning("ONo:" + currentCartObjectArray[i].ONo + ", Cart Number:" + currentCartObjectArray[i].CarrierID);
 
-            //CurrentOrderData.Add("Order Number: " + currentOrdersObjectArray[i].ONo + ", Company Name: " + currentOrdersObjectArray[i].Company + ", Planned Start Time: " + currentOrdersObjectArray[i].PlannedStart + ", Planned End Time: " + currentOrdersObjectArray[i].PlannedEnd + ", Build State: " + currentOrdersObjectArray[i].State);
-
             CurrentCartData.Add("ONo:" + currentCartObjectArray[i].ONo + ", Cart Number:" + currentCartObjectArray[i].CarrierID);
         }
 
@@ -44,6 +47,7 @@ public class Cart : MonoBehaviour
         }
 
         info.text = listInfo;
+        Debug.LogError(info.text);
     }
 
     string fixJson(string value)
@@ -85,4 +89,11 @@ public class Cart : MonoBehaviour
             }
         }
     }
+
+
+
+    //    private void update()
+    //    {
+    //        currentCarrierID = currentCartObjectArray[i].ONo;
+    //    }
 }

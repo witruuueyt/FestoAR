@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class SwitchCamera : MonoBehaviour
@@ -7,7 +8,7 @@ public class SwitchCamera : MonoBehaviour
     public GameObject  camera1;
     public GameObject  arcamera;
     public bool armode;
-    
+    public TMP_Text text;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,12 +28,14 @@ public class SwitchCamera : MonoBehaviour
             camera1.SetActive(false);
             arcamera.SetActive(true);
             armode= false;
+            text.text = "Digital Twin";
         }
         else
         {
             arcamera.SetActive(false);
             camera1.SetActive(true);
             armode= true;
+            text.text = "AR Mode";
         }
     }
 }

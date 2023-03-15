@@ -1,35 +1,44 @@
-﻿//using UnityEngine;
-//using System.Collections;
-//using game4automation;
-//using UnityEditor.PackageManager.Requests;
-//using UnityEngine.Networking;
+﻿using UnityEngine;
+using System.Collections;
+using game4automation;
+using UnityEditor.PackageManager.Requests;
+using UnityEngine.Networking;
 
-//public class Robotino : MonoBehaviour
-//{
-//    public string websiteURL; //http://172.21.10.90/
+public class Robotino : MonoBehaviour
+{
 
-//    public void OnButtonClick()
-//    {
-//        StartCoroutine(OpenURL());
-//    }
+    public void OpenWebPage()
+    {
+        Application.OpenURL("http://172.21.10.90/");
+    }
 
-//    private IEnumerator OpenURL()
-//    {
-//        UnityWebRequest webRequest = UnityWebRequest.Get(websiteURL);
-//        yield return webRequest.SendWebRequest();
 
-//        if (webRequest.result == UnityWebRequest.Result.Success)
-//        {
-//            Debug.Log("Website opened successfully");
-            
-//        }
-//        else
-//        {
-//            Debug.LogError("Error opening website: " + webRequest.error);
-//        }
-//    }
 
-//}
+
+    //    public string websiteURL; //http://172.21.10.90/
+
+    //    public void OnButtonClick()
+    //    {
+    //        StartCoroutine(OpenURL());
+    //    }
+
+    //    private IEnumerator OpenURL()
+    //    {
+    //        UnityWebRequest webRequest = UnityWebRequest.Get(websiteURL);
+    //        yield return webRequest.SendWebRequest();
+
+    //        if (webRequest.result == UnityWebRequest.Result.Success)
+    //        {
+    //            Debug.Log("Website opened successfully");
+
+    //        }
+    //        else
+    //        {
+    //            Debug.LogError("Error opening website: " + webRequest.error);
+    //        }
+    //    }
+
+}
 
 
 

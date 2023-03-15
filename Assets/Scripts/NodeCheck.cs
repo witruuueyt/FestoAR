@@ -58,4 +58,10 @@ public class NodeCheck : MonoBehaviour
     {
         uiFeedbackTMP.text = "Registered " + nodeBeingMonitored + " as " + dataFromOPCUANode;
     }
+
+    public string GetCarrierID()
+    {
+        return dataFromOPCUANode;
+    }
+
 }
