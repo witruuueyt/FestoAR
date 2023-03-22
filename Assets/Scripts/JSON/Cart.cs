@@ -58,7 +58,7 @@ public class Cart : MonoBehaviour
 
     public void GetRequestPublic()
     {
-        StartCoroutine(GetRequest(requestURL));     //calls coroutine and sets string
+        StartCoroutine(GetRequest("http://172.21.0.90/SQLData.php?Command=cart"));     //calls coroutine and sets string
     }
 
     IEnumerator GetRequest(string url)

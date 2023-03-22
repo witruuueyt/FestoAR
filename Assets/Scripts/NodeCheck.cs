@@ -62,6 +62,7 @@ public class NodeCheck : MonoBehaviour
     public string GetCarrierID()
     {
         return dataFromOPCUANode;
+        
     }
 
 }
