@@ -29,9 +29,9 @@ public class CurrentOrders: MonoBehaviour
 
         for (int i = 0; i < currentOrdersObjectArray.Length; i++)                     
         {
-            Debug.LogWarning("ONo:" + currentOrdersObjectArray[i].ONo + ", Company:" + currentOrdersObjectArray[i].Company + ", Planned Start:" + currentOrdersObjectArray[i].PlannedStart + ", Planned End:" + currentOrdersObjectArray[i].PlannedEnd + ", State:" + currentOrdersObjectArray[i].State);
+            Debug.LogWarning("ONo:" + currentOrdersObjectArray[i].ONo + ", Planned Start:" + currentOrdersObjectArray[i].PlannedStart + ", Planned End:" + currentOrdersObjectArray[i].PlannedEnd + ", State:" + currentOrdersObjectArray[i].State);
 
-            CurrentOrderData.Add("Order Number: " + currentOrdersObjectArray[i].ONo + ", Company Name: " + currentOrdersObjectArray[i].Company + ", Planned Start Time: " + currentOrdersObjectArray[i].PlannedStart + ", Planned End Time: " + currentOrdersObjectArray[i].PlannedEnd + ", Build State: " + currentOrdersObjectArray[i].State);
+            CurrentOrderData.Add("Order Number: " + currentOrdersObjectArray[i].ONo  + ", Planned Start Time: " + currentOrdersObjectArray[i].PlannedStart + ", Planned End Time: " + currentOrdersObjectArray[i].PlannedEnd + ", Build State: " + currentOrdersObjectArray[i].State);
         }
 
         foreach(var listMember in CurrentOrderData)                 

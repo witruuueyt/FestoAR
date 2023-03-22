@@ -59,6 +59,7 @@ public class Cart : MonoBehaviour
     public void GetRequestPublic()
     {
         StartCoroutine(GetRequest("http://172.21.0.90/SQLData.php?Command=cart"));     //calls coroutine and sets string
+        
     }
 
     IEnumerator GetRequest(string url)
@@ -92,8 +93,8 @@ public class Cart : MonoBehaviour
 
 
 
-    //    private void update()
-    //    {
-    //        currentCarrierID = currentCartObjectArray[i].ONo;
-    //    }
+    //private void update()
+    //{
+    //    currentCarrierID = currentCartObjectArray[i].ONo;
+    //}
 }

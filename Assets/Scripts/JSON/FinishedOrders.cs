@@ -31,7 +31,7 @@ public class FinishedOrders : MonoBehaviour
         {
             Debug.LogWarning("ONo:" + finishedOrdersObjectArray[i].FinONo + ", Company:" + finishedOrdersObjectArray[i].Company + ", Start:" + finishedOrdersObjectArray[i].Start + ", Planned End:" + finishedOrdersObjectArray[i].End + ", State:" + finishedOrdersObjectArray[i].State);
 
-            FinishedOrderData.Add("Order Number: " + finishedOrdersObjectArray[i].FinONo + ", Company Name: " + finishedOrdersObjectArray[i].Company + ", Start Time: " + finishedOrdersObjectArray[i].Start + ", End Time: " + finishedOrdersObjectArray[i].End + ", Build State: " + finishedOrdersObjectArray[i].State);
+            FinishedOrderData.Add("Order Number: " + finishedOrdersObjectArray[i].FinONo  + ", End Time: " + finishedOrdersObjectArray[i].End);
         }
 
         foreach (var listMember in FinishedOrderData)
