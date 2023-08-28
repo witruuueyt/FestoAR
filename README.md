@@ -1,6 +1,6 @@
 # InformationMachine
 
-Second assignment
+Vuforia: 10.13.3
 
 For the Festo Cyber physical factory develop a Digital Twin and AR app to visualize the route of the orders across the system.
 
