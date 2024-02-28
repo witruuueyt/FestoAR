@@ -1,4 +1,4 @@
-# InformationMachine
+# FestoAR
 
 Vuforia: 10.13.3
 
